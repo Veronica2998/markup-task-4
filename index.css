@@ -14,10 +14,11 @@
     text-align: center;
 }
 
-.cat p
+p
 {
-    text-align: center;
-    font-size: 25px;
+    margin-left: 20px;
+    font-size: 20px;
+    display: inline;
 }
 
 .name:hover
@@ -26,24 +27,20 @@
     white-space: normal;
 }
 
-.name
+.card .name
 {
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 170px;
 }
 
 .pic
 {
     width: 400px;
     height: 250px;
-    padding: 20px 20px auto;
-}
-
-i
-{
-    margin-left: 20px;
-    font-size: 20px;
-    display: inline;
+    padding: 20px 25px auto;
 }
 
 .card:hover
@@ -76,6 +73,17 @@ input[class='list']:checked ~ .cat > .card
     width: 650px;
     display: block;
     margin: 5px auto;
+    text-align: center;
+}
+
+input[class='list']:checked ~ .cat > .card > .name
+{
+    margin-right: 130px;
+}
+
+input[class='list']:checked ~ .cat > p
+{
+    text-align: center;
 }
 
 input[class='grid']:checked ~ .cat > .card > .information
