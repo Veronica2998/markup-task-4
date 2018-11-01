@@ -1,0 +1,94 @@
+.cat
+{
+    width: auto;
+    height: auto;
+    background: #ffe4e1;
+    display: block;
+}
+
+.cat h1
+{
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.cat p
+{
+    text-align: center;
+    font-size: 25px;
+}
+
+.name:hover
+{
+    font-weight: bold;
+    white-space: normal;
+}
+
+.name
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pic
+{
+    width: 400px;
+    height: 250px;
+    padding: 20px 20px auto;
+}
+
+i
+{
+    margin-left: 20px;
+    font-size: 20px;
+    display: inline;
+}
+
+.card:hover
+{
+    box-shadow: 0 0 15px rgb(255, 112, 207);
+}
+
+.pic:hover
+{
+    box-shadow: 0 0 15px rgb(255, 112, 207);
+}
+
+input[class='grid']:checked ~ .card
+{
+    width: 450px;
+    height: auto;
+    border: 3px solid #fa82c4;
+    display: inline-block;
+    text-align: left;
+    margin: 5px;
+}
+
+input[class='grid']:checked ~ .card i
+{
+    display: none;
+}
+
+input[class='list']:checked ~ .cat > .card
+{
+    width: 650px;
+    display: block;
+    margin: 5px auto;
+}
+
+input[class='grid']:checked ~ .cat > .card > .information
+{
+    display: none;
+}
+
+.card
+{
+    width: 450px;
+    height: auto;
+    border: 3px solid #fa82c4;
+    display: inline-block;
+    text-align: left;
+    margin: 5px;
+}
