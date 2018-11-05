@@ -1,4 +1,4 @@
-.cat
+.cats
 {
     width: auto;
     height: auto;
@@ -6,7 +6,7 @@
     display: block;
 }
 
-.cat h1
+.cats h1
 {
     font-size: 45px;
     font-weight: bold;
@@ -14,43 +14,65 @@
     text-align: center;
 }
 
-p
+.mini_information p
 {
     margin-left: 20px;
     font-size: 20px;
     display: inline;
 }
 
+.information p
+{
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.mini_information
+{
+    text-align: left;
+}
+
+.mini_information:hover,
+.information:hover
+{
+    font-weight: bold;
+    box-shadow: 0 0 15px #f39;
+}
+
 .name:hover
 {
     font-weight: bold;
-    white-space: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.card .name
+.name
 {
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
     font-size: 25px;
-    margin-left: 170px;
+
 }
 
 .pic
 {
     width: 400px;
     height: 250px;
-    padding: 20px 25px auto;
+    margin: 0 auto;
 }
 
 .card:hover
 {
-    box-shadow: 0 0 15px rgb(255, 112, 207);
+    box-shadow: 0 0 15px #f39;
 }
 
 .pic:hover
 {
-    box-shadow: 0 0 15px rgb(255, 112, 207);
+    box-shadow: 0 0 15px #f39;
 }
 
 input[class='grid']:checked ~ .card
@@ -63,32 +85,41 @@ input[class='grid']:checked ~ .card
     margin: 5px;
 }
 
-input[class='grid']:checked ~ .card i
-{
-    display: none;
-}
-
-input[class='list']:checked ~ .cat > .card
+input[class='list']:checked ~ main .card
 {
     width: 650px;
     display: block;
-    margin: 5px auto;
+    text-align: center;
+    margin-left: 300px;
+}
+
+input[class='list']:checked ~ main .pic
+{
+    width: 450px;
+    height: 300px;
+}
+
+input[class='list']:checked ~ main .cats p
+{
     text-align: center;
 }
 
-input[class='list']:checked ~ .cat > .card > .name
+input[class='list']:checked ~ main .information p
 {
-    margin-right: 130px;
+    text-align: left;
 }
 
-input[class='list']:checked ~ .cat > p
-{
-    text-align: center;
-}
-
-input[class='grid']:checked ~ .cat > .card > .information
+input[class='grid']:checked ~ main .information
 {
     display: none;
+    text-align: left;
+}
+
+input[class='grid']:checked ~ main .information p
+{
+    margin-left: 20px;
+    font-size: 20px;
+    display: inline;
 }
 
 .card
@@ -97,6 +128,9 @@ input[class='grid']:checked ~ .cat > .card > .information
     height: auto;
     border: 3px solid #fa82c4;
     display: inline-block;
-    text-align: left;
+    text-align: center;
     margin: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

@@ -1,86 +1,114 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Про котиков»</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body>
     <input checked class="grid" type="radio" name="display" id="grid">
     <label class="grid" for="grid">Карточки</label>
     <input class="list" type="radio" name="display" id="list">
     <label class="list" for="list">Списочек</label>
-    <div class="cat">
-        <h1>Милые котики</h1>
-        <div class="card">
-            <p><img src="кот1.png" class="pic" alt="Котик" title="Котик"></p>
-            <p class="name">Мурзик</p><br>
-            <p>Возраст: 3 месяца</p><br>
-            <p>Статус: ищет хозяина</p><br>
-            <div class="information">
-                <p>Маленький и веселый котенок ждет своих хозяев.</p><br>
-                <p>Любит играть с фонариком.</p></div>
+    <main>
+        <div class="cats">
+            <h1>Милые котики</h1>
+            <article class="card">
+                <p><img src="кот1.png" class="pic" alt="Котик" title="Котик"></p>
+                <p class="name">Мурзик</p>
+                <div class="mini_information">
+                    <p>Возраст: 3 месяца</p><br>
+                    <p>Статус: ищет хозяина</p><br>
+                </div>
+                <div class="information">
+                    <p>Маленький и веселый котенок ждет своих хозяев.<br>
+                        Любит играть с фонариком.</p>
+                </div>
+            </article>
+            <article class="card">
+                <p><img src="кот2.jpg" class="pic" alt="Котик" title="Котик"></p>
+                <p class="name">Персик</p>
+                <div class="mini_information">
+                    <p>Возраст: 2 месяцев</p><br>
+                    <p>Статус: ищет хозяина</p><br>
+                </div>
+                <div class="information">
+                    <p>Породистый котенок,очень ласковый и добрый.</p>
+                </div>
+            </article>
+            <article class="card">
+                <p><img src="кот3.jpg" class="pic" alt="Котик" title="Котик"></p>
+                <p class="name">Барсик</p>
+                <div class="mini_information">
+                    <p>Возраст: 11 месяцев</p><br>
+                    <p>Статус: ищет хозяина</p><br>
+                </div>
+                <div class="information">
+                    <p>Приучен к лотку,кушает все,что дадут.</p>
+                </div>
+            </article>
+            <article class="card">
+                <p><img src="кот4.png" class="pic" alt="Котик" title="Котик"></p>
+                <p class="name">Дымок</p>
+                <div class="mini_information">
+                    <p>Возраст: 2 месяца</p><br>
+                    <p>Статус: ищет хозяина</p><br>
+                </div>
+                <div class="information">
+                    <p>Котенок очень любит играть.<br>
+                        Лучший друг для ваших детей!</p>
+                </div>
+            </article>
+            <article class="card">
+                <p><img src="кот5.jpg" class="pic" alt="Котик" title="Котик"></p>
+                <p class="name">Рыжик</p>
+                <div class="mini_information">
+                    <p>Возраст: 2 года</p><br>
+                    <p>Статус: ищет хозяина</p><br>
+                </div>
+                <div class="information">
+                    <p>Очень самостоятельный кот.<br>
+                        Хорошо уживается с другими котами.</p>
+                </div>
+            </article>
+            <article class="card">
+                <p><img src="кот6.jpg" class="pic" alt="Котик" title="Котик"></p>
+                <p class="name">Васька</p>
+                <div class="mini_information">
+                    <p>Возраст: 1 год</p><br>
+                    <p>Статус: ищет хозяина</p><br>
+                </div>
+                <div class="information">
+                    <p>Боится грозы и детей.<br>
+                        Ждет заботливых хозяев.</p>
+                </div>
+            </article>
+            <article class="card">
+                <p><img src="кот7.jpg" class="pic" alt="Котик" title="Котик"></p>
+                <p class="name">Красотка</p>
+                <div class="mini_information">
+                    <p>Возраст: 2 года</p><br>
+                    <p>Статус: ищет хозяина</p><br>
+                </div>
+                <div class="information">
+                    <p>Породистая кошка.<br>
+                        Любит шелковые подушки и лучший корм.</p>
+                </div>
+            </article>
+            <article class="card">
+                <p><img src="кот8.jpg" class="pic" alt="Котик" title="Котик"></p>
+                <p class="name">Захарик и оооооооооочень длинная фамилия</p>
+                <div class="mini_information">
+                    <p>Возраст: 1 год 3 месяца</p><br>
+                    <p>Статус: ищет хозяина</p><br>
+                </div>
+                <div class="information">
+                    <p>Веселый кот,взяли с улицы.Болезней нет.</p>
+                </div>
+            </article>
         </div>
-        <div class="card">
-            <p><img src="кот2.jpg" class="pic" alt="Котик" title="Котик"></p>
-            <p class="name">Персик</p><br>
-            <p>Возраст: 2 месяцев</p><br>
-            <p>Статус: ищет хозяина</p><br>
-            <div class="information">
-                <p>Породистый котенок,очень ласковый и добрый.</p></div>
-        </div>
-        <div class="card">
-            <p><img src="кот3.jpg" class="pic" alt="Котик" title="Котик"></p>
-            <p class="name">Барсик</p><br>
-            <p>Возраст: 11 месяцев</p><br>
-            <p>Статус: ищет хозяина</p><br>
-            <div class="information">
-                <p>Приучен к лотку,кушает все,что дадут.</p></div>
-        </div>
-        <div class="card">
-            <p><img src="кот4.png" class="pic" alt="Котик" title="Котик"></p>
-            <p class="name">Дымок</p><br>
-            <p>Возраст: 2 месяца</p><br>
-            <p>Статус: ищет хозяина</p><br>
-            <div class="information">
-                <p>Котенок очень любит играть.</p><br>
-                <p>Лучший друг для ваших детей!</p></div>
-        </div>
-
-        <div class="card">
-            <p><img src="кот5.jpg" class="pic" alt="Котик" title="Котик"></p>
-            <p class="name">Рыжик</p><br>
-            <p>Возраст: 2 года</p><br>
-            <p>Статус: ищет хозяина</p><br>
-            <div class="information">
-                <p>Очень самостоятельный кот.</p><br>
-                <p>Хорошо уживается с другими котами.</p></div>
-        </div>
-        <div class="card">
-            <p><img src="кот6.jpg" class="pic" alt="Котик" title="Котик"></p>
-            <p class="name">Васька</p><br>
-            <p>Возраст: 1 год</p><br>
-            <p>Статус: ищет хозяина</p><br>
-            <div class="information">
-                <p>Боится грозы и детей.Ждет заботливых хозяев.</p></div>
-        </div>
-        <div class="card">
-            <p><img src="кот7.jpg" class="pic" alt="Котик" title="Котик"></p>
-            <p class="name">Красотка</p><br>
-            <p>Возраст: 2 года</p><br>
-            <p>Статус: ищет хозяина</p><br>
-            <div class="information">
-                <p>Породистая кошка.</p><br>
-                <p>Любит шелковые подушки и лучший корм.</p></div>
-        </div>
-        <div class="card">
-            <p><img src="кот8.jpg" class="pic" alt="Котик" title="Котик"></p>
-            <p class="name">Захар</p><br>
-            <p>Возраст: 1 год 3 месяца</p><br>
-            <p>Статус: ищет хозяина</p><br>
-            <div class="information">
-                <p>Веселый кот,взяли с улицы.Болезней нет.</p></div>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
