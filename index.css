@@ -14,7 +14,7 @@
     text-align: center;
 }
 
-.mini_information p
+.mini-information p
 {
     margin-left: 20px;
     font-size: 20px;
@@ -28,12 +28,12 @@
     text-align: left;
 }
 
-.mini_information
+.mini-information
 {
     text-align: left;
 }
 
-.mini_information:hover,
+.mini-information:hover,
 .information:hover
 {
     font-weight: bold;
